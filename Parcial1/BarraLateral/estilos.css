@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Barralateral {
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+}
+
+.Barralateral header {
+    font-size: 22px;
+    color: aliceblue;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+}
+
+.Barralateral ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.Barralateral ul a i {
+    margin-right: 16px;
+}
+
+.contenido img {
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+    .Barralateral {
+        background: #042331;
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        width: 100%;
+        align-items: center;
+        padding: 0 40px;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+    }
+    .Barralateral ul {
+        float: right;
+        list-style: none;
+        margin-right: 40px;
+        position: relative;
+    }
+    .Barralateral ul li {
+        display: inline-block;
+        background: #042331;
+        margin-right: -10px;
+        margin-left: 5px;
+    }
+    .Barralateral ul li a {
+        color: white;
+        text-decoration: none;
+        line-height: 70px;
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    ul li:hover a {
+        color: yellowgreen;
+    }
+    .Barralateral header {
+        background-color: #042331;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Barralateral {
+        display: block;
+        width: 100vw;
+        height: auto;
+    }
+    .Barralateral ul li {
+        display: block;
+        width: 100vw;
+    }
+}
