@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> <i class="fas fa-music"> Música</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Albúmes <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Artistas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Discográficas</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <form class="form">
+
+            <div class="row">
+                <div class="form-group col-sm-12 col-md-4 col-lg-12">
+                    <label for="dirTipo">Tipo: </label> <br>
+                    <label class="radio-inline"><input type="radio" name="optradio">Albúm</label>
+
+                    <label class="radio-inline"><input type="radio" name="optradio">EP</label>
+
+                    <label class="radio-inline"><input type="radio" name="optradio">Single</label>
+                </div>
+                <div class="form-group col-sm-12 col-md-8 col-lg-12">
+                    <label for="nomCliente">Título</label>
+                    <input id="nomCliente" type="text" class="form-control" placeholder="" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-sm-12 col-md-8 col-lg-12">
+                    <label for="dirTitulo">Discográfica</label>
+                    <input id="dirTitulo" type=" text " class="form-control " placeholder="Discográfica1,Discográfica2,..." />
+                </div>
+                <div class="form-group col-sm-12 col-md-4 col-lg-12 ">
+                    <label for="telCliente ">Duración</label>
+                    <input id="telCliente " type="text " class="form-control " placeholder="hrs:mm.ss" />
+                </div>
+            </div>
+
+
+            <div class="row ">
+                <div class="form-group col-sm-12 col-md-6 col-lg-4 ">
+                    <label for="ciudad ">Publicación</label>
+                    <input id="ciudad " type="text " class="form-control " placeholder="aaaa-mm-dd" />
+                </div>
+                <div class="form-group col-sm-12 col-md-6 col-lg-4 ">
+                    <label for="estado ">Género(s)</label>
+                    <input id="estado " type="text " class="form-control " placeholder="Género1,Género2,... " />
+                </div>
+                <div class="form-group col-sm-12 col-md-6 col-lg-4 ">
+                    <label for="dirTipo">Formato: </label> <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">CD</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Dígital</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <button type="submit " class="btn btn-primary "> Enviar</button>
+            <button type="reset " class="btn btn-default "><i class="far fa-trash-alt"></i> Limpiar</button>
+
+            <script src="https://kit.fontawesome.com/5c8e25216f.js" crossorigin="anonymous"></script>
+
+        </form>
+    </div>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-dark" href="https://github.com/Gabriela-pv/perezva">GitHub</a>
+        </div>
+    </footer>
+
+</body>
+<html>

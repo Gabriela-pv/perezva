@@ -1,0 +1,30 @@
+body {
+    background-color: rgba(142, 156, 80, 0.5);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    font-size: 20px;
+}
+
+.container {
+    padding-top: 1em;
+    background-color: rgba(89, 156, 80, 0.363);
+    padding-bottom: 1em;
+}
+
+.btn {
+    background-color: rgba(12, 68, 5, 0.5);
+    color: white;
+    border-color: rgba(12, 68, 5, 0.1);
+}
+
+.btn:hover {
+    background-color: rgb(157, 173, 12);
+    border-color: yellowgreen;
+}
+
+.radio-inline {
+    margin-right: 10px;
+    margin-left: 10px;
+}
